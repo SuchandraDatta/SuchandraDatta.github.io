@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vesper+Libre&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>Portfolio Website</title>
+        <style>
+            body
+            {
+                /*background-color: black;*/
+                background-image: url('wow.gif');
+            }
+           
+            #navbar
+            {
+                position: fixed;
+                top:0;
+                left:0;
+                width: 100%;
+                background-color: black;
+                position: fixed;
+                display: block;
+                z-index: 1;
+                font-size: 1rem;
+                
+            }
+            ul
+            {
+                list-style-type: none;
+                
+            }
+            a:link
+            {
+                text-decoration: none;
+                color: white;
+                font-family: 'Bree Serif', monospace;
+                margin-left: 1%;
+                margin-right: 1%;
+                margin-bottom: 1%;
+                float: right;
+                
+                
+            }
+            a:hover
+            {
+                font-weight: bolder;
+            }
+            :visited
+            {
+                color: white;
+            }
+            #main-content
+            {
+                background-image: url('penPaper.jpeg');
+                background-attachment: fixed;
+                background-size: cover;
+                color: white;
+                width: 100%;
+                position: relative;
+                margin-top: -1vw;
+                height: 100vh;
+                font-size: 5vw; 
+                font-weight: bolder;
+                text-shadow: 0.5rem 0.5rem rgba(70, 65, 65, 0.397);
+            }
+           #about-me
+           {
+               height: 50vh;
+               width: 80%;
+               border: 0;
+               background-color: #90CAF9;
+               position: relative;
+               top: 5vh;
+               position: relative;
+               left: 10vw;
+               font-size: 1.5rem;
+               
+               
+           }
+           
+           #about-me > p
+           {
+            color: black; 
+            font-style: italic; 
+            font-weight: bold; 
+            
+           }
+        .project-link > a
+        {
+            height: 45vh;
+            width: 20%;
+            position: relative;
+            /*font-family: "Times New Roman", cursive; */
+            font-style: italic;
+            font-size: 1.25rem;
+            text-align: center;
+            background-color: rgb(30, 112, 145);            
+        }
+        #contactMe 
+        {
+            height: 20vh;
+            width: 100%;
+            background-color: #78909C;
+            position: relative;
+            margin-top: 125vh;
+            border: none;
+        }
+        .myImage
+        {
+            position: relative; 
+            border-radius: 50%; 
+            height: 13rem; 
+            width: 10rem; 
+            margin-top: 2%; 
+            left: 30vw; 
+            max-width: 100%;
+        }
+        .leftText
+        {
+            position: relative; top: -35vh; left: 10vh;
+            
+        }
+        .rightText
+        {
+            position: absolute; left: 62%; top: -1vh;
+            color: black;
+        }
+        .moodDetection
+        {
+            top: 15vh; 
+            right: 65vw;
+        }
+        .customerReview
+        {
+            position: relative; 
+            top: 15vh; 
+            right: 21vw;
+        }
+        .binImgClassify
+        {
+            position: relative; 
+            top: 15vh; 
+            left: 22.5vw;
+        }
+        .CRUD
+        {
+            top: 70vh; 
+            left: 10vw; 
+        }
+        .research
+        {
+             position:absolute; 
+             right: 30vw;
+             top: 23vh;
+        }
+        .instaBlogLink
+        {
+            position: relative; 
+            right: 50vw; 
+            top: 4.5vh; 
+        }
+        .emailLink
+        {
+            position: relative; 
+            right: 30vw; 
+            top: 3.2vh;
+        }
+        .githubLink
+        {
+            position: relative; right: 10vw; top: 3.2vh; 
+        }
+        @media screen and (min-width: 300px) and (max-width: 700px)
+           {
+                 #about-me
+                 {
+                     height:100vh;
+                     width: 100%;
+                     left:0;
+                     background: transparent;
+                     
+                 }
+                 #main-content
+                 {
+                     font-size: 2rem;
+                 }
+                 .myImage
+                 {
+                     left: 10vh;
+                 }
+                 .leftText
+                 {
+                     top: -82vh;
+                     left: 5vh;
+                 }
+                 .rightText
+                 {
+                     left: 3rem;
+                     top:15rem;
+                     
+                 }
+                 .project-link > a
+                 {
+                     height: 20rem;
+                     width: 15rem;
+                 }
+                 .moodDetection, .customerReview
+                 {
+                     right: 14vw;
+                 }
+                 .customerReview
+                 {
+                     margin-top: 5vh;
+                 }
+                 .binImgClassify
+                 {
+                     margin-top: 5vh;
+                     left: -7vh;
+                     margin-right: 10vw;
+                 }
+                 .CRUD
+                {
+                    margin-top: -50vh; 
+                    left: -12vw; 
+                }
+                .research
+                {
+                    right: 12vw;
+                    margin-top: 50vh;
+                }
+                #contactMe 
+                {
+                   height: 60vh;
+                   width: 100%;
+                   background-color: #78909C;
+                   position: relative;
+                   margin-top: 300vh;
+                   border: none;
+                   background: transparent;
+                }
+                .instaBlogLink
+                {
+                   float: left;
+                   right: 5vw;
+                   
+                   /*right: 50vw; 
+                   margin-top: 20vh; */
+                }
+                .emailLink
+                {
+                   float: left;
+                   right: 15vw;
+                   
+                   /*right: -2vw;
+                   top: 8vh;*/
+                }
+                .githubLink
+                {   float: left;
+                    right: 20vw;
+                    
+                    /*right: -15vw; top: 20vh;*/
+                }
+                #contactMeImage
+                {
+                    display: none;
+                }
+               
+           }
+        /*
+           .pinmain-content
+            {   font-size: 6.5vh; 
+                text-shadow: 0.5rem 0.5rem rgba(70, 65, 65, 0.397);
+            }
+            .leftText
+            {
+                font-size: 1rem;
+                left: 20%;
+                top: 1vh;
+            }
+            .rightText
+            {
+                display: none;
+            }
+            .myImage
+            {
+                height: 9rem;
+                width: 10rem;
+                left: 20%;
+                top: 3vh;;
+            }
+            .project-link > a
+            {
+                font-size: 1rem;
+                height: 30vh;
+                width: 40%;
+            }
+        }*/
+        </style>
+
+    </head>
+    <body>
+        <!--Navbar is above all other elements-->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#project-link-id">PROJECTS</a></li>
+                <li><a href="#contactMe">CONTACT</a></li>
+                <li><a href="#about-me">ABOUT</a></li>
+                <li><a href="#main-content">HOME</a></li>
+            </ul>
+        </nav>
+        <div id="main-content">
+                <p class="pinmain-content" style="text-align: center; position: relative; top: 45vh; color: black;
+                 font-style: italic;">Hi I'm Suchandra&nbsp;Datta</p>       
+        </div>
+        
+        <div id="about-me">
+            <img class="myImage" src="me.png" alt="My photo"/>
+            <p class="leftText" style="color: black;">Graduate in <br/>Computer Science<br/>
+            <br/>Pursuing Postgraduation in <br/>Computer Science
+            </p>
+            <p class="rightText" style="color: white;">
+                Interested in machine learning, web development<br/><br/><br/>
+                Curious to employ technology to solve real-world problems
+            </p>
+        </div>
+     
+        <div  class="project-link" id="project-link-id">
+           <a class="moodDetection" href="https://github.com/SuchandraDatta/GraduationProject"> 
+            Mood detection using Deep Neural Networks
+            <img src="MLpic.jpeg" alt="ML picture" height="70%" width="100%" style="position: relative; top: 6.5%;"/>
+            </a>
+        </div>
+
+        <div  class="project-link">
+            <a class="customerReview" href="https://github.com/SuchandraDatta/MachineLearningProjects/tree/master/BOWclassifierCompare"> 
+            Customer review classification
+            <img src="customerReview.png" alt="ML picture" height="70%"  width="97%" style="position: relative; top: 6.5%"/>
+            </a>
+        </div>
+
+        <div  class="project-link">
+                <a class="binImgClassify" href="https://github.com/SuchandraDatta/MachineLearningProjects/tree/master/dogCatCNNClassifier"  
+                > 
+                 Binary Image Classification using CNN
+                 <img src="CNN.jpg" alt="ML picture" height="70%" width="97%" style="position: relative; top: 6.5%"/>
+                 </a>
+        </div>
+        
+        <div  class="project-link">
+            <a class="CRUD" href="https://github.com/SuchandraDatta/WebDevelopment/tree/master/NotesAppUsingReact"> 
+             CRUD app using React
+             <img src="React.gif" alt="ML picture" height="80%" width="96%" style="position: relative; top: 6.5%"/>
+             </a>
+         </div>
+
+         <div  class="project-link">
+            <a class="research" href="https://www.ijcseonline.org/pdf_paper_view.php?paper_id=4056&73-IJCSE-06562.pdf"> 
+             Research papers
+             <img src="research.jpg" alt="ML picture" height="80%" width="97%" style="position: relative; margin-top: 6.5%"/>
+             </a>
+         </div>
+        <div id="contactMe">
+                <img id="contactMeImage" src="contactme.jpg" alt="Contact me image" height="90vh" style="position: relative; top: 15%; left: 20%"/>    
+                <a class="instaBlogLink" href="instagram blog link">
+                <img src="insta.jpg" alt="Instagram" height="70vh" style="border-radius: 25%;"/>
+                </a>
+                <a class="emailLink" href="instagram blog link">
+                <img src="email.png" alt="Email" height="90vh"/>
+                </a>
+                <a class="githubLink" href="instagram blog link">
+                <img src="github.png" alt="Github" height="90vh" style="border-radius: 50%;"/>
+                </a>
+                    
+        </div>
+    </body>
+</html>
