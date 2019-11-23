@@ -12,10 +12,10 @@
             body
             {
                 background-color: black;
-                background-image: url('wow.gif');
+                background-image: url('wow.webp');
             }
            
-            #navbar
+           /*#navbar
             {
                 position: fixed;
                 top:0;
@@ -32,7 +32,7 @@
             {
                 list-style-type: none;
                 
-            }
+            }*/
             a:link
             {
                 text-decoration: none;
@@ -47,7 +47,7 @@
             }
             a:hover
             {
-                font-weight: bolder;
+                color: white;
             }
             :visited
             {
@@ -91,9 +91,19 @@
             /*left: 30vw;*/ 
             max-width: 100%;
         }
-        #project-link
+        /*#project-link
         {
             
+            position: relative;
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center;
+            background-color: rgba(30, 112, 145,0.8);  
+            border-radius: 3%;
+            height: auto;
+        }*/
+        .project-link
+        {
             position: relative;
             /*font-family: "Times New Roman", cursive; */
             font-style: italic;
@@ -101,7 +111,7 @@
             text-align: center;
             background-color: rgba(30, 112, 145,0.8);  
             border-radius: 3%;
-            
+            height: auto;
         }
         #contactMe 
         {
@@ -110,20 +120,47 @@
             position: relative;
             /*margin-top: 125vh;*/
             border: none;
+            
         }
         </style>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#showThese" aria-controls="showThese" aria-expanded="false" aria-label="Toggle navigation">
             
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="showThese">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#project-link">PROJECTS</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#contact-me">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#about-me">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#main-content">HOME</a></li>
+                       
+                    </ul>                    
+            </div>
+        </nav>
+        <br/><br/>
                     <!--Navbar is above all other elements-->
-                    <nav id="navbar">
+                   <!--<nav id="navbar">
                         <ul>
+                                <li><a href="#somewhere" id="hamburger" onclick="animateHam()">
+                                        <div id="line1" style="background-color: white; height: 0.5vh; width: 5vh; position: relative; margin-top: 20%;"></div>
+                                        <div id="line2" style="background-color: white; height: 0.5vh; width: 5vh; position: relative; margin-top: 25%;"></div>
+                                        <div id="line3" style="background-color: white; height: 0.5vh; width: 5vh; position: relative; margin-top: 30%;"></div>
+                                    </a>
+                                    <div id="hamContent">
+
+                                    </div>
+                                </li>
                             <li><a href="#project-link">PROJECTS</a></li>
                             <li><a href="#contact-me">CONTACT</a></li>
                             <li><a href="#about-me">ABOUT</a></li>
                             <li><a href="#main-content">HOME</a></li>
+                           
                         </ul>
-                    </nav>
+                    </nav>-->
+                   
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12" id="main-content">
@@ -149,32 +186,33 @@
                     </div>
                 </div>
                 <div class="row mx-5 mt-5" style="position: relative; top: 25vh;">
-                        <div  class="col-md-3 sm-2 mx-4 mt-5" id="project-link">
-                                <a href="https://github.com/SuchandraDatta/GraduationProject"> 
-                                 Mood detection using Deep Neural Networks
+                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">       
+                                <a href="https://github.com/SuchandraDatta/GraduationProject" style="color: balck;"> 
+                                    Mood detection using Deep Neural Networks
                                 <img src="MLpic.jpeg" alt="ML picture" width="100%" style="position: relative; top: 6.5%;"/>
                                  </a>
+                                
                         </div>
-                        <div  class="col-md-3 sm-2 mx-4 mt-5" id="project-link">
+                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">
                                 <a href="https://github.com/SuchandraDatta/MachineLearningProjects/tree/master/BOWclassifierCompare"> 
                                 Customer review classification
                                 <img src="customerReview.jpg" alt="ML picture" width="100%" style="position: relative; margin-top: 15.5%"/>
                                 </a>
                         </div>
-                        <div  class="col-md-3 sm-2 mx-4 mt-5" id="project-link">
+                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">
                                 <a class="binImgClassify" href="https://github.com/SuchandraDatta/MachineLearningProjects/tree/master/dogCatCNNClassifier"  
                                 > 
                                  Binary Image Classification using CNN
                                  <img src="CNN.jpg" alt="ML picture" width="99%" style="position: relative; margin-top: 9.5%"/>
                                  </a>
                         </div>
-                        <div  class="col-md-3 sm-2 mx-4 mt-5" id="project-link">
+                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">
                                 <a href="https://github.com/SuchandraDatta/WebDevelopment/tree/master/NotesAppUsingReact"> 
                                  CRUD app using React
                                  <img src="React.gif" alt="ML picture" height="80%" width="96%" style="position: relative; top: 6.5%"/>
                                  </a>
                         </div>
-                        <div  class="col-md-3 sm-2 mx-4 mt-5" id="project-link">
+                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">
                                 <a href="https://www.ijcseonline.org/pdf_paper_view.php?paper_id=4056&73-IJCSE-06562.pdf"> 
                                  Research papers
                                  <img src="research.jpg" alt="ML picture" height="80%" width="97%" style="position: relative; margin-top: 14.5%"/>
@@ -202,7 +240,7 @@
             </div>
             
     </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script async src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
