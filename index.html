@@ -6,127 +6,20 @@
             <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Vesper+Libre&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <meta name="viewport" content="width=device-width,initial-scale=1">
             <meta charset="utf-8">
+            <link rel="stylesheet" href="./indexCSS.css">
             <title>Portfolio Website</title>
+            <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <style>
-            body
-            {
-                background-color: black;
-                background-image: url('wow.webp');
-            }
-           
-           /*#navbar
-            {
-                position: fixed;
-                top:0;
-                left:0;
-                width: 100%;
-                background-color: black;
-                position: fixed;
-                display: block;
-                z-index: 1;
-                font-size: 1rem;
                 
-            }
-            ul
-            {
-                list-style-type: none;
-                
-            }*/
-            a:link
-            {
-                text-decoration: none;
-                color: white;
-                font-family: 'Bree Serif', monospace;
-                margin-left: 1%;
-                margin-right: 1%;
-                margin-bottom: 1%;
-                float: left;
-                
-                
-            }
-            a:hover
-            {
-                color: white;
-            }
-            :visited
-            {
-                color: white;
-            }
-            #main-content
-            {
-                background-image: url('penPaper.jpeg');
-                background-attachment: fixed;
-                background-size: cover;
-                color: white;
-                width: 100%;
-                position: relative;
-                margin-top: -1vw;
-                height: 100vh;
-                font-size: 5vw; 
-                font-weight: bolder;
-                text-shadow: 0.5rem 0.5rem rgba(70, 65, 65, 0.397);
-            }
-            #about-me
-           {
-               height: 40vh;
-               width: 80%;
-               /*position: relative;
-               top: 5vh;
-               position: relative;
-               left: 10vw;*/
-               font-size: 1rem;    
-               font-style: italic;
-               font-weight: bold;
-               position: relative;
-               margin-left: 10vw;
-           }
-        .myImage
-        {
-            position: relative; 
-            border-radius: 50%; 
-            height: 13rem; 
-            width: 10rem; 
-            margin-top: 2%; 
-            /*left: 30vw;*/ 
-            max-width: 100%;
-        }
-        /*#project-link
-        {
-            
-            position: relative;
-            font-style: italic;
-            font-size: 1.2rem;
-            text-align: center;
-            background-color: rgba(30, 112, 145,0.8);  
-            border-radius: 3%;
-            height: auto;
-        }*/
-        .project-link
-        {
-            position: relative;
-            /*font-family: "Times New Roman", cursive; */
-            font-style: italic;
-            font-size: 1rem;
-            text-align: center;
-            background-color: rgba(30, 112, 145,0.8);  
-            border-radius: 3%;
-            height: auto;
-        }
-        #contactMe 
-        {
-            height: 20vh;
-            background-color: #78909C;
-            position: relative;
-            /*margin-top: 125vh;*/
-            border: none;
-            
-        }
-        </style>
+
+            </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#showThese" aria-controls="showThese" aria-expanded="false" aria-label="Toggle navigation">
             
             <span class="navbar-toggler-icon"></span>
@@ -136,148 +29,174 @@
                         <li class="nav-item"><a class="nav-link active" href="#project-link">PROJECTS</a></li>
                         <li class="nav-item"><a class="nav-link active" href="#contact-me">CONTACT</a></li>
                         <li class="nav-item"><a class="nav-link active" href="#about-me">ABOUT</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#main-content">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#title">HOME</a></li>
                        
                     </ul>                    
             </div>
         </nav>
         <br/><br/>
-                    <!--Navbar is above all other elements-->
-                   <!--<nav id="navbar">
-                        <ul>
-                                <li><a href="#somewhere" id="hamburger" onclick="animateHam()">
-                                        <div id="line1" style="background-color: white; height: 0.5vh; width: 5vh; position: relative; margin-top: 20%;"></div>
-                                        <div id="line2" style="background-color: white; height: 0.5vh; width: 5vh; position: relative; margin-top: 25%;"></div>
-                                        <div id="line3" style="background-color: white; height: 0.5vh; width: 5vh; position: relative; margin-top: 30%;"></div>
-                                    </a>
-                                    <div id="hamContent">
-
-                                    </div>
-                                </li>
-                            <li><a href="#project-link">PROJECTS</a></li>
-                            <li><a href="#contact-me">CONTACT</a></li>
-                            <li><a href="#about-me">ABOUT</a></li>
-                            <li><a href="#main-content">HOME</a></li>
-                           
-                        </ul>
-                    </nav>-->
-                   
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12" id="main-content">
-                            <p class="pinmain-content" style="text-align: center; position: relative; top: 45vh; color: black;
-                             font-style: italic;">Hi I'm Suchandra&nbsp;Datta</p>       
+                            <p id="title" >Hi I'm Suchandra&nbsp;Datta</p>       
                     </div>
                 </div>
                 <br/>
-                <div class="row justify-content-md-center" id="about-me">
-                    <div class="col-sm-3">
-                            <p class="leftText" style="color: white;">Graduate in <br/>Computer Science<br/>
-                                <br/>Pursuing Postgraduation in <br/>Computer Science
-                            </p>
-                    </div>
-                    <div class="col-sm-3">
-                            <img class="img-responsive myImage" src="me.png" alt="My photo"/>
-                    </div>  
-                    <div class="col-sm-3">
-                            <p class="rightText" style="color: white;">
-                                    Interested in machine learning, web development<br/><br/><br/>
-                                    Curious to employ technology to solve real-world problems
-                            </p>
-                    </div>
-                </div>
-                <div class="row mx-5 mt-5" style="position: relative; top: 25vh;">
-                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">       
-                                <a href="https://github.com/SuchandraDatta/GraduationProject" style="color: balck;"> 
-                                    Mood detection using Deep Neural Networks
-                                <img src="MLpic.jpeg" alt="ML picture" width="100%" style="position: relative; margin-top: 6.5%;"/>
-                                 </a>
-                                
-                        </div>
-                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">
-                                <a href="https://github.com/SuchandraDatta/MachineLearningProjects/tree/master/BOWclassifierCompare"> 
-                                Customer review classification
-                                <img src="customerReview.jpg" alt="ML picture" width="100%" style="position: relative; margin-top: 15.5%"/>
-                                </a>
-                        </div>
-                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">
-                                <a class="binImgClassify" href="https://github.com/SuchandraDatta/ProductPriceCompareDJANGO"
-                                > 
-                                 Product price comparison using BeautifulSoup, Django and urllib
-                                 <img src="CNN.png" alt="Web scraper picture" width="99%" style="position: relative; margin-top: 5.5%"/>
-                                 </a>
-                        </div>
-                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">
-                                <a href="https://github.com/SuchandraDatta/ReactCRUDapp"> 
-                                 CRUD app using React
-                                 <img src="React.gif" alt="ML picture" height="80%" width="96%" style="position: relative; top: 6.5%"/>
-                                 </a>
-                        </div>
-                        <div  class="col-md-3 sm-2 mx-4 mt-5 project-link">
-                                <!--<a href="https://www.ijcseonline.org/pdf_paper_view.php?paper_id=4056&73-IJCSE-06562.pdf"> 
-                                 Research papers
-                                 <img src="research.jpg" alt="ML picture" height="80%" width="97%" style="position: relative; margin-top: 14.5%"/>
-                                 </a>-->
-                                 <img src="research.jpg" alt="ML picture" height="80%" width="97%" style="position: relative; margin-top: 14.5%"/>
-                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#researchModal"
-                                 style="font-style: italic; font-weight: bolder; position: relative; margin-top: -100%;
-                                 background: transparent; border: none">
-                                    Research papers
-                                  </button>
-                                  <div class="modal fade" id="researchModal" tabindex="-1" role="dialog" aria-labelledby="researchModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="researchModal">View papers</h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                          </button>
-                                        </div>
-                                        <div class="modal-body" style="background-color: black;">
-                                          <p style="color: white;">
-                                           <a href="https://www.ijcseonline.org/pdf_paper_view.php?paper_id=4056&73-IJCSE-06562.pdf">
-                                           Bit Level Encryption algorithm &nbsp; pdf
-                                          </a>
-                                          <a href="https://www.ijeat.org/wp-content/uploads/papers/v8i6/F7987088619.pdf">
-                                          Mood analysis using neural networks &nbsp; pdf
-                                          </a>
-                                          <a href="http://ijarcsms.com/docs/paper/volume7/issue4/V7I4-0021.pdf">
-                                          Li-Fi:Current technology &nbsp; pdf
-                                          </a>
-                                           </p>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                          
-                                        </div>
-                                      </div>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-md-8">
+                        <div class="mx-auto" id="aboutMe">
+                            <div class="flex-container center days7" style="position: relative; margin-top: 20vh;">
+                                <!--Hours-->
+                                <div class="flex-item digit">
+                                    <div class="digit-inner">
+                                        9
                                     </div>
-                                  </div>
+                                    <div class="digit-inner-lower blink">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="flex-item  digit">
+                                    <div class="digit-inner blink">
+                                        9
+                                    </div>
+                                    <div class="digit-inner-lower">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div class="separator">
+                                        :
+                                    </div>
+                                </div>
+                                <!--Minutes-->
+                                <div class="flex-item digit">
+                                    <div class="digit-inner blink">
+                                        9
+                                    </div>
+                                    <div class="digit-inner-lower">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="flex-item  digit">
+                                    <div class="digit-inner">
+                                        9
+                                    </div>
+                                    <div class="digit-inner-lower blink">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div class="separator">
+                                        :
+                                    </div>
+                                </div>
+                                <!--Seconds-->
+                                <div class="flex-item digit">
+                                    <div class="digit-inner  blink">
+                                        9
+                                    </div>
+                                    <div class="digit-inner-lower ">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="flex-item  digit">
+                                    <div class="digit-inner ">
+                                        9
+                                    </div>
+                                    <div class="digit-inner-lower blink">
+                                        9
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-about-me" id="about-me">
+                                Hello. This is my portfolio page where I attempt to showcase the projects which I've done. I'm a computer science graduate student from St. Xavier's College Kolkata, currently pursuing M.Sc. in Computer Science from the same college. I'm passionate anout problem solving, converting concepts to apps that solve  real-world problems. Interested in machine learning and web development.
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div style="color: white; text-align: center; padding: 10%;" id="project-link">
+                   <h1>MY PROJECTS</h1>
                 </div>
 
 
-                <div class="row mt-4" style="position: relative; top: 25vh; margin-left: 30vw;" id="contact-me">
-                    <div class="col-sm-2">
-                        <a href="instagram blog link">
-                        <img src="insta.jpg" alt="Instagram" height="75vh" style="border-radius: 25%;"/>
-                        </a>
-                    </div>
-                    <div class="col-sm-2">
-                        <a href="instagram blog link">
-                        <img src="email.png" alt="Email" height="90vh"/>
-                        </a>
-                    </div>
-                    <div class="col-sm-2">
-                        <a class="githubLink" href="instagram blog link">
-                        <img src="github.png" alt="Github" height="90vh" style="border-radius: 50%;"/>
-                        </a>   
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-md-4">
+                        
+                        <div class="ml-5 mr-5 eachCard" style="background-image: url('pic1.jpg');">
+                            Mood Analysis Using Convolutional Neural Networks<br/>
+                            <div class="projectButton">
+                            <a href="#">View source code</a>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                
-            </div>
-            
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-md-4 mt-5">
+                        <div class="ml-5 mr-5 eachCard" style="background-image: url('pic2.jpg');">
+                            Product price comparison using BeautifulSoup and Django
+                            <br/><div class="projectButton">
+                                <a href="#">View source code</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class="ml-5 mr-5 eachCard" style="background-image: url('pic3.jpg'); ">
+                            Customer Review Classification using Deep Learning
+                            <br/><div class="projectButton">
+                                <a href="#">View source code</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class="ml-5 mr-5 eachCard" style="background-image: url('React.gif'); ">
+                            React App(Create, Read, Update, Delete)
+                            <br/><div class="projectButton">
+                                <a href="#">View source code</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5  justify-content-center">
+                    <div class="col-md-4 mt-5">
+                        <div class="ml-5 mr-5 eachCard" style="background-image: url('pic4.jpg'); ">
+                            College Tech Fest Website(eXabyte 2020)
+                            <br/><div class="projectButton">
+                                <a href="#">View source code</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="matrix" style="background-image: url('./matrix.gif'); position: relative; margin-top: 10%; height: 200vh;">
+                <div style="color: white; text-align: center; padding: 10%;">
+                    <h1>MY SKILLSET</h1>
+                 </div>
+                 <div class="container">
+                     <div class="row justify-content-center">
+                         <div class="col-md-12">
+                            <div class="mt-4 forTerminal">
+                               <p class="thisP">
+                                  <span class="filepath">skills@Suchandra:~$</span>
+                               </p>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                 </div>
+                 <footer>
+                     <br/>
+                     <h1>Contact me</h1>
+                     <div class="social-media" id="contact-me">
+                     <ul>
+                        <li><a href="https://github.com/SuchandraDatta"><i class="fa fa-github fa-5x"></i> </a></li>
+                        <li><a href="https://www.linkedin.com/in/suchandra-datta-9723801a4/"><i class="fa fa-linkedin fa-5x"></i></a></li>
+                        <li><a href="https://www.instagram.com/code_euphoria/"><i class="fa fa-instagram fa-5x"></i></a></li>
+                        </ul>
+                    </div>
+                 </footer>
     </body>
+    <script async src="./counterJS.js"></script>
+    <script async src="./index.js"></script>
     <script async src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
