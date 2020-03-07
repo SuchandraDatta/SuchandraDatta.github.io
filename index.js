@@ -29,7 +29,7 @@ async function checkOffsetForTerminal()
 	let rect = ele.getBoundingClientRect();
 	console.log(rect);
 
-	if(rect.top >= 0 && rect.left>=0 && rect.right<=window.innerWidth && flag == 0)
+	if(rect.top >= 0 && rect.left>=0 && rect.right<=window.innerWidth &&rect.bottom<=window.innerHeight && flag == 0)
 	{
 		console.log('in viewport');
 		startAnimation();
