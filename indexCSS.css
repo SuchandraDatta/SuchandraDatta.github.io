@@ -27,11 +27,18 @@ nav
 {
     text-align: center; 
     position: relative; 
-    top: 45vh; 
     color: black;
     font-style: italic; 
     font-weight: bolder; 
     font-size: 2em;
+}
+@media screen and (max-width: 414px)
+{
+    #main-content img
+    {
+        width: 100px;
+        margin: 30vh auto 0;
+    }
 }
 .eachCard
 {
@@ -249,26 +256,32 @@ footer
 .social-media
 {
     position: relative;
-    width: 30%;
+    width: 50%;
     margin: 5% auto;
     font-size: 16px;
+}
+footer ul
+{
+    list-style-type: none;
+}
+.social-media ul li
+{
+    float: left;
+    margin-left: 15%;
+}
+ul li a i {
+	color: aliceblue;
 }
 @media screen and (max-width: 384px)
 {
     .social-media
     {
         font-size: 7px;
+        width: 80%;
     }
-}
-footer ul
-{
-    list-style-type: none;
-}
-ul li
+    .social-media   ul li
 {
     float: left;
-    margin-left: 8%;
+    margin-left: 10%;
 }
-ul li a i {
-	color: aliceblue;
 }
