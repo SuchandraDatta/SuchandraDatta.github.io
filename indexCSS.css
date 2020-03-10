@@ -9,14 +9,32 @@ nav
 }
 #main-content
 {
-    background-image: url('./penPaper.jpeg');
+    background-image: url('./penPaper-min.jpeg');
     height: 100vh;
     background-size: cover;
+}
+#main-content img
+{
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,1);
+}
+@keyframes fadeIn
+{
+    0%{
+        transform: rotateY(90deg);
+    }
+    50%
+    {
+        transform: rotateY(-90deg);
+    }
 }
 #aboutMe
 {
     background-color: red;
-    background-image: url('aboutMeBack.jpg');
+    background-image: url('aboutMeBack-min.jpg');
     background-position: center;
     height: 150vh;
     color: white;
@@ -31,6 +49,30 @@ nav
     font-style: italic; 
     font-weight: bolder; 
     font-size: 2em;
+    animation-name: titleAnimate;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    color: transparent;
+}
+@keyframes titleAnimate
+{
+    0%
+    {
+        color: black;
+        letter-spacing: -0.5em;
+    }
+    50%
+    {
+        color: transparent;
+        letter-spacing: 0.1em;
+    }
+    100%
+    {
+        color: black;
+        letter-spacing:normal;
+    }
 }
 @media screen and (max-width: 414px)
 {
@@ -213,7 +255,7 @@ nav
     padding: 2%;
     box-shadow: 0 10px 15px 0.5px white;
     border-radius: 2em;
-    background-image: url('./kali.jpg');
+    background-image: url('./kali-min.jpg');
     background-size: contain;
     background-position: left;
     
@@ -284,4 +326,20 @@ ul li a i {
     float: left;
     margin-left: 10%;
 }
+}
+/*For the container of terminal start*/
+.matrix
+{
+    background-image: url('./matrix.gif'); 
+    position: relative; 
+    margin-top: 10%; 
+    height: 200vh;
+}
+/*For the container of terminal end*/
+@media screen and (max-width: 414px)
+{
+    .matrix
+    {
+        height: 130vh;
+    }
 }
