@@ -1,14 +1,15 @@
 **RESPONSIVE PORTFOLIO WEBSITE**
 
+:fallen_leaf: Extensive coverage of this topic is present in my Medium article linked below
+
+https://medium.com/@sdutta7691/build-and-host-your-first-portfolio-website-ef9bbcc8f8b6
+
 A site can be made sufficiently responsive by use of units such as vw, vh, em, rem and % where applicable along with media queries with
 proper breakpoints. Bootstrap4 is a wonderful CSS framework that allows us to design complex responsive layouts with a low learning curve 
 for beginners. It works on dividing the screen into 12 columns, elements are defined as taking up 3 or 4 or 6 of these so if an element takes
 6 of the 12 columns, it will be displayed at 50% of the width of the screen on a variety of screens of different viewport sizes. Utility classes,
 in-built components like hamburger menus, beautifully crafted carousels with a wonderfully lucid documentation offers a really low learning
 curve for beginners.
-
-:maple_leaf:Extensive coverage of this topic is present on my Medium article 
-https://medium.com/@sdutta7691/build-and-host-your-first-portfolio-website-ef9bbcc8f8b6
 
 Along with understanding the basics of responsive design, this project also helped to understand certain aspects of website optimization
 
