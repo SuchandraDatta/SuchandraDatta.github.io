@@ -31,3 +31,6 @@ scrolls it into the screen.
 ![githubPic1](https://user-images.githubusercontent.com/41965125/76338694-1246fe80-631f-11ea-9de0-b2afb03adca7.png)
 
 The Lighthouse Audit tool helps to get an idea about the performance of the page.
+
+
+Extensive coverage of this topic is present on my Medium article https://medium.com/@sdutta7691/build-and-host-your-first-portfolio-website-ef9bbcc8f8b6
