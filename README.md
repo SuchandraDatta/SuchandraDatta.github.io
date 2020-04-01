@@ -7,6 +7,9 @@ for beginners. It works on dividing the screen into 12 columns, elements are def
 in-built components like hamburger menus, beautifully crafted carousels with a wonderfully lucid documentation offers a really low learning
 curve for beginners.
 
+:maple_leaf:Extensive coverage of this topic is present on my Medium article 
+https://medium.com/@sdutta7691/build-and-host-your-first-portfolio-website-ef9bbcc8f8b6
+
 Along with understanding the basics of responsive design, this project also helped to understand certain aspects of website optimization
 
 :maple_leaf:Using images of proper size. Either assign images of different sizes using srcset tag where we specify the image to be displayed 
@@ -33,4 +36,4 @@ scrolls it into the screen.
 The Lighthouse Audit tool helps to get an idea about the performance of the page.
 
 
-Extensive coverage of this topic is present on my Medium article https://medium.com/@sdutta7691/build-and-host-your-first-portfolio-website-ef9bbcc8f8b6
+
