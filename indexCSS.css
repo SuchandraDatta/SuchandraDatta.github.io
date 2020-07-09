@@ -9,7 +9,7 @@ nav
 }
 #main-content
 {
-    background-image: url('./penPaper-min.jpeg');
+    background-image: url('./penPaper-min.webp');
     height: 100vh;
     background-size: cover;
 }
@@ -34,7 +34,7 @@ nav
 #aboutMe
 {
     background-color: red;
-    background-image: url('aboutMeBack-min.jpg');
+    background-image: url('aboutMeBack-min.webp');
     background-position: center;
     height: 150vh;
     color: white;
@@ -99,7 +99,7 @@ nav
     box-shadow: 7px 7px 15px 0.5px white;
     padding: 10%;
     transition: 0.5s ease-in; /*keyframes don't work
-    for the back translation of div back to riginal position*/
+    for the back translation of div back to original position*/
 }
 .eachCard:hover
 {
@@ -260,7 +260,7 @@ nav
     padding: 2%;
     box-shadow: 0 10px 15px 0.5px white;
     border-radius: 2em;
-    background-image: url('./kali-min.jpg');
+    background-image: url('./kali-min.webp');
     background-size: contain;
     background-position: left;
     
@@ -335,7 +335,7 @@ ul li a i {
 /*For the container of terminal start*/
 .matrix
 {
-    background-image: url('./matrix.gif'); 
+    background-image: url('./matrix.webp'); 
     position: relative; 
     margin-top: 10%; 
     height: 200vh;
