@@ -32,7 +32,7 @@ scrolls it into the screen.
 
 :herb:Manipulating DOM for creating the digital clock.
 
-![githubPic1](https://user-images.githubusercontent.com/41965125/76338694-1246fe80-631f-11ea-9de0-b2afb03adca7.png)
+![pic](https://user-images.githubusercontent.com/41965125/104928208-60f60800-59c8-11eb-99ed-5885481b6f05.png)
 
 The Lighthouse Audit tool helps to get an idea about the performance of the page.
 
