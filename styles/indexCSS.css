@@ -303,8 +303,8 @@ footer
 .social-media
 {
     position: relative;
-    width: 50%;
-    margin: 5% auto;
+    width: 60%;
+    margin: 1% auto;
     font-size: 16px;
 }
 footer ul
@@ -314,22 +314,22 @@ footer ul
 .social-media ul li
 {
     float: left;
-    margin-left: 15%;
+    margin-left: 7%;
 }
 ul li a i {
 	color: aliceblue;
 }
-@media screen and (max-width: 384px)
+@media screen and (max-width: 401px)
 {
     .social-media
     {
         font-size: 7px;
-        width: 80%;
+        width: 90%;
     }
     .social-media   ul li
 {
     float: left;
-    margin-left: 10%;
+    margin-left: 4%;
 }
 }
 /*For the container of terminal start*/
