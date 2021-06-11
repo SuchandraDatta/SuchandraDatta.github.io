@@ -1,7 +1,6 @@
 body
 {
     background-color: black;
-    /*background-image: url('wow.webp');*/
 }
 nav
 {
@@ -90,20 +89,16 @@ nav
 .eachCard
 {
     background-color: red;
-    color: white;
+    color: black;
     height: 50vh;
     font-size: 1.3em;
     text-align: center;
     font-weight: bolder;
     background-size: cover;
-    box-shadow: 7px 7px 15px 0.5px white;
+    box-shadow: 0 0 50px 5px gray;
     padding: 10%;
-    transition: 0.5s ease-in; /*keyframes don't work
+     /*keyframes don't work
     for the back translation of div back to original position*/
-}
-.eachCard:hover
-{
-    transform: translateY(-35px);
 }
 @media screen and (min-width: 768px)
 {
@@ -206,28 +201,30 @@ nav
 /*Styles for .projectButton start*/
 .projectButton 
 {
-    height: 15%;
-    width: 70%;
+    height: 4vw;
+    width: 10vw;
     padding: 3%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+    position: absolute;
+    top: 60%;
+    left: 32%;
     font-size: 0.7em;
     border-radius: 2em;
-    color: white;
-    background: linear-gradient(to right, hsla(194, 71%, 50%, 0.685), #400ae1);
-}
-@media screen and (max-width: 360px)
-{
-    .projectButton
-    {
-        font-size: 0.6em;
-    }
+    border: 2px solid white;
+    color: black;
+    /*background: linear-gradient(to right, hsla(194, 71%, 50%, 0.685), #400ae1);*/
+    background-color: rgba(0,0,0,0.5);
 }
 .projectButton a
 {
     color: white;
+}
+@media screen and (max-width: 414px)
+{
+    .projectButton
+    {
+        width: 35vw;
+        height: 8vh;
+    }
 }
 /*Styles for .projectButton end*/
 .eachCard a:hover
@@ -252,8 +249,9 @@ nav
 .forTerminal
 {
     background-color: black;
-    height: 85vh;
+    height: 83vh;
     position: relative;
+    margin-bottom: 2vw;
     color: white;
     font-weight: bolder;
     font-size: 1.6em;
@@ -269,9 +267,19 @@ nav
 {
     .forTerminal
     {
-        font-size: 1em;
+        height: 69vh;
+        font-size: 0.9em;
     }
 }
+@media screen and (max-width: 320px)
+{
+    .forTerminal
+    {
+        height: 80vh;
+        font-size: 0.9em;
+    }
+}
+
 .forTerminal td
 {
     border: 1px solid grey;
