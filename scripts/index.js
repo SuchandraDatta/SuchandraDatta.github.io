@@ -21,7 +21,7 @@ async function startAnimation()
 	await sleep(100);
 	terminal.innerHTML+=secondCommand.substring(i,i+1);
     }
-	terminal.innerHTML += "<table cellspacing=\"2\" cellpadding=\"5\" style=\"text-align: center;\"> <tr> <td><span class=\"topic\">Webpage Design</span></td> <td>HTML5, CSS3, JavaScript</td> </tr> <tr> <td><span class=\"topic\">Machine Learning</span></td> <td>Python, Keras, NumPy, Pandas</tr> <tr> <td><span class=\"topic\">Backend</span></td> <td>Flask, Nodejs</td> </tr> <tr> <td><span class=\"topic\">Others</span></td> <td>Java, C, C++ </tr> <tr> <th colspan=\"2\">Tools</th> </tr> <tr> <td><span class=\"topicTools\">Firebase, GitHub</span></td> <td><span class=\"topicTools\">Google Colab</span></td> </tr> </table>";
+	terminal.innerHTML += "<table cellspacing=\"2\" cellpadding=\"5\" style=\"text-align: center;\"> <tr> <td><span class=\"topic\">Webpage Design</span></td> <td>HTML5, CSS3, JavaScript</td> </tr> <tr> <td><span class=\"topic\">Machine Learning</span></td> <td>Python, NumPy, Pandas</tr> <tr> <td><span class=\"topic\">Backend</span></td> <td>Flask, Nodejs</td> </tr> <tr> <td><span class=\"topic\">Others</span></td> <td>Java, C, C++ </tr> <tr> <th colspan=\"2\">Tools</th> </tr> <tr> <td><span class=\"topicTools\">Firebase, GitHub</span></td> <td><span class=\"topicTools\">Google Colab</span></td> </tr> </table>";
 }
 async function checkOffsetForTerminal()
 {
